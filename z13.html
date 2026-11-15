@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>雨 · 春晓</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--paper:#f6efdf;--paper2:#fffdf6;--ink:#1b1b1b;--red:#b5342a;--line:#8a8578;--wash:#ece6d6;color-scheme:light}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper) url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'.8'%20numOctaves%3D'3'%20seed%3D'4'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%20.45%20%200%200%200%200%20.38%20%200%200%200%200%20.25%20%200%200%200%20.09%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'300'%20height%3D'300'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");color:var(--ink);font-family:'Noto Serif SC','Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+button{font-family:inherit;color:inherit}
+a{color:inherit}
+.ic{display:block}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.wrap{max-width:520px;margin:0 auto;padding:14px 16px 30px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.picbox{width:100%;max-width:340px;aspect-ratio:4/3;border:3px solid var(--ink);border-radius:6px;background:var(--paper2);overflow:hidden}
+.picbox .pic-svg{display:none;width:100%;height:100%}
+.picbox .pic-svg.on{display:block}
+.sq{width:min(100%,340px);aspect-ratio:1;border:3px solid var(--ink);border-radius:6px;background:var(--paper2)}
+.sq svg{width:100%;height:100%;display:block}
+.mid{display:flex;flex-direction:column;align-items:center;gap:0;width:100%}
+.py{height:36px;font-size:27px;font-weight:600;letter-spacing:.04em;line-height:36px;transition:opacity .15s}
+.py.hide{opacity:0}
+.big{width:100%;max-width:340px;min-height:132px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;cursor:pointer;font-family:'Ma Shan Zheng','KaiTi','STKaiti','Kaiti SC',serif;font-size:clamp(100px,34vw,140px);line-height:1.05;color:var(--ink);overflow:hidden;white-space:nowrap}
+.big.en{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600;color:var(--red)}
+.vars{display:flex;gap:8px;width:100%;max-width:420px}
+.vb{flex:1 1 0;min-width:0;min-height:64px;padding:0 2px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);font-size:clamp(15px,4.7vw,21px);cursor:pointer;white-space:nowrap}
+.vb[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+h2{margin:6px 0 0;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;font-weight:400;font-size:34px;letter-spacing:.04em}
+.words{display:flex;flex-direction:column;gap:10px;width:100%;max-width:420px}
+.wd{display:flex;align-items:center;gap:12px;min-height:68px;padding:8px 14px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);cursor:pointer;text-align:left}
+.wd.en{border-color:var(--red)}
+.wd .ic{width:44px;height:44px;flex:none}
+.wt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;font-size:28px;line-height:1.25}
+.wd.en .wt{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600}
+.back{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:64px;margin-top:6px;border:3px solid var(--ink);border-radius:14px;background:var(--wash);text-decoration:none;font-size:26px;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;letter-spacing:.1em}
+</style></head>
+<body><main class="wrap">
+<div class="picbox"><svg data-ch="风" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="风" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><path d="M2 14H28a6 6 0 1 0-6-6"/><path d="M2 24H38a6 6 0 1 1-6 6"/><path d="M2 34H22"/><g transform="translate(20 2) rotate(25 24 24) scale(0.34)"><path d="M8 38C8 20 20 8 40 8C40 28 30 40 14 40C11 40 9 39 8 38Z" fill="#ece6d6"/><path d="M8 40L34 14"/></g><g transform="translate(-2 30) rotate(-30 24 24) scale(0.3)"><path d="M8 38C8 20 20 8 40 8C40 28 30 40 14 40C11 40 9 39 8 38Z" fill="#ece6d6"/><path d="M8 40L34 14"/></g></g></svg><svg data-ch="雨" class="pic-svg on" viewBox="0 0 240 180" role="img" aria-label="雨" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><path transform="translate(3 2) scale(1.1)" d="M10 24C3 24 2 14 9 13C9 6 20 4 23 10C28 5 38 9 35 16C41 17 40 24 33 24Z" fill="#ece6d6"/><path d="M13 31l-2 7M21 31l-2 7M29 31l-2 7M37 31l-2 7M17 40l-2 6M25 40l-2 6M33 40l-2 6"/></g></svg><svg data-ch="云" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="云" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><path transform="translate(1 8) scale(1.1)" d="M10 24C3 24 2 14 9 13C9 6 20 4 23 10C28 5 38 9 35 16C41 17 40 24 33 24Z" fill="#ece6d6"/><path transform="translate(10 22) scale(1)" d="M10 24C3 24 2 14 9 13C9 6 20 4 23 10C28 5 38 9 35 16C41 17 40 24 33 24Z" fill="#ece6d6"/><path d="M4 44H18M26 40H44" /></g></svg><svg data-ch="雪" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="雪" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><path d="M24 24L24.0 7.0M24.0 14.1L20.8 9.7M24.0 14.1L27.2 9.7M24 24L38.7 15.5M32.5 19.1L34.8 14.1M32.5 19.1L38.0 19.6M24 24L38.7 32.5M32.5 28.9L38.0 28.4M32.5 28.9L34.8 33.9M24 24L24.0 41.0M24.0 33.9L27.2 38.3M24.0 33.9L20.8 38.3M24 24L9.3 32.5M15.5 28.9L13.2 33.9M15.5 28.9L10.0 28.4M24 24L9.3 15.5M15.5 19.1L10.0 19.6M15.5 19.1L13.2 14.1"/><path d="M7 8L7.0 3.5M7.0 5.4L6.2 4.2M7.0 5.4L7.8 4.2M7 8L10.9 5.8M9.3 6.7L9.9 5.4M9.3 6.7L10.7 6.8M7 8L10.9 10.3M9.3 9.3L10.7 9.2M9.3 9.3L9.9 10.6M7 8L7.0 12.5M7.0 10.6L7.8 11.8M7.0 10.6L6.2 11.8M7 8L3.1 10.3M4.7 9.3L4.1 10.6M4.7 9.3L3.3 9.2M7 8L3.1 5.8M4.7 6.7L3.3 6.8M4.7 6.7L4.1 5.4"/><path d="M42 9L42.0 5.0M42.0 6.7L41.3 5.6M42.0 6.7L42.7 5.6M42 9L45.5 7.0M44.0 7.8L44.5 6.7M44.0 7.8L45.3 8.0M42 9L45.5 11.0M44.0 10.2L45.3 10.0M44.0 10.2L44.5 11.3M42 9L42.0 13.0M42.0 11.3L42.7 12.4M42.0 11.3L41.3 12.4M42 9L38.5 11.0M40.0 10.2L39.5 11.3M40.0 10.2L38.7 10.0M42 9L38.5 7.0M40.0 7.8L38.7 8.0M40.0 7.8L39.5 6.7"/><path d="M42 41L42.0 37.0M42.0 38.7L41.3 37.6M42.0 38.7L42.7 37.6M42 41L45.5 39.0M44.0 39.8L44.5 38.7M44.0 39.8L45.3 40.0M42 41L45.5 43.0M44.0 42.2L45.3 42.0M44.0 42.2L44.5 43.3M42 41L42.0 45.0M42.0 43.3L42.7 44.4M42.0 43.3L41.3 44.4M42 41L38.5 43.0M40.0 42.2L39.5 43.3M40.0 42.2L38.7 42.0M42 41L38.5 39.0M40.0 39.8L38.7 40.0M40.0 39.8L39.5 38.7"/><path d="M6 41L6.0 37.5M6.0 39.0L5.3 38.1M6.0 39.0L6.7 38.1M6 41L9.0 39.3M7.8 40.0L8.2 39.0M7.8 40.0L8.9 40.1M6 41L9.0 42.8M7.8 42.0L8.9 41.9M7.8 42.0L8.2 43.0M6 41L6.0 44.5M6.0 43.0L6.7 43.9M6.0 43.0L5.3 43.9M6 41L3.0 42.8M4.2 42.0L3.8 43.0M4.2 42.0L3.1 41.9M6 41L3.0 39.3M4.2 40.0L3.1 40.1M4.2 40.0L3.8 39.0"/></g></svg></div>
+<div class="sq" id="sq" role="img" aria-label="雨"></div>
+<div class="mid"><div class="py" id="py">yǔ</div><button class="big" id="big" type="button" aria-label="雨">雨</button></div>
+<div class="vars"><button class="vb" type="button" data-ch="风" aria-pressed="false">大风</button><button class="vb" type="button" data-ch="雨" aria-pressed="true">下雨</button><button class="vb" type="button" data-ch="云" aria-pressed="false">白云</button><button class="vb" type="button" data-ch="雪" aria-pressed="false">下雪</button></div>
+<h2>Good friends</h2>
+<div class="words"><button class="wd" type="button" data-zh="下雨" data-en="rain"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path transform="translate(3 3) scale(1.05)" d="M10 24C3 24 2 14 9 13C9 6 20 4 23 10C28 5 38 9 35 16C41 17 40 24 33 24Z" fill="#ece6d6"/><path d="M15 32l-2 6M24 32l-2 6M33 32l-2 6M20 40l-2 5M29 40l-2 5"/></svg><span class="wt">下雨</span></button><button class="wd" type="button" data-zh="雨伞" data-en="umbrella"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26C4 12 14 6 24 6s20 6 20 20q-5-5-10 0q-5-5-10 0q-5-5-10 0q-5-5-10 0Z" fill="#ece6d6"/><path d="M24 26V38a4 4 0 0 1-8 0M24 6V3"/></svg><span class="wt">雨伞</span></button><button class="wd" type="button" data-zh="雨衣" data-en="raincoat"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 3c6 0 10 4 10 9s-4 8-10 8-10-3-10-8 4-9 10-9Z" fill="#ece6d6"/><path d="M14 20L7 44H41L34 20Z" fill="#c8c1ad"/><path d="M24 20V44M19 28h1M28 28h1M19 35h1M28 35h1"/></svg><span class="wt">雨衣</span></button><button class="wd" type="button" data-zh="雨靴" data-en="boots"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H28V26Q28 30 34 32Q44 34 44 40V43H14Z" fill="#ece6d6"/><path d="M14 10H28M14 43H44"/></svg><span class="wt">雨靴</span></button></div>
+<a class="back" href="./">回到诗</a>
+</main>
+<script>var START="雨",DATA={"风":{"strokes":["M 312 661 Q 263 697 237 686 Q 224 677 232 664 Q 253 637 254 570 Q 254 372 227 275 Q 199 179 133 56 Q 129 49 127 43 Q 126 31 136 34 Q 154 37 186 86 Q 315 254 316 536 Q 316 584 323 625 C 327 651 327 651 312 661 Z","M 956 10 Q 949 89 947 222 Q 948 235 941 241 Q 934 245 930 230 Q 900 119 884 102 Q 878 93 854 104 Q 802 128 764 209 Q 731 282 721 375 Q 711 472 732 597 Q 736 640 766 674 Q 785 687 772 700 Q 760 719 725 745 Q 704 760 653 738 Q 611 732 312 661 C 283 654 294 617 323 625 Q 333 626 345 631 Q 478 668 645 692 Q 664 695 673 688 Q 676 685 677 654 Q 623 239 781 75 Q 835 9 923 -19 Q 942 -26 952 -16 Q 959 -9 956 10 Z","M 524 347 Q 552 408 583 496 Q 602 541 603 543 Q 602 546 602 547 Q 590 566 564 587 Q 548 602 534 600 Q 521 596 525 581 Q 540 536 483 386 L 463 339 Q 415 240 316 140 Q 310 136 307 129 Q 303 119 313 119 Q 346 116 434 209 Q 441 218 450 228 Q 475 259 497 296 L 524 347 Z","M 497 296 Q 540 238 590 170 Q 600 151 614 145 Q 621 142 629 150 Q 642 160 636 200 Q 633 248 524 347 L 483 386 Q 411 452 369 486 Q 362 492 358 481 Q 357 469 364 459 Q 412 405 463 339 L 497 296 Z"],"medians":[[[244,673],[274,649],[286,622],[283,456],[270,342],[248,254],[222,187],[168,85],[137,44]],[[327,633],[335,648],[449,677],[672,718],[704,712],[720,690],[703,617],[692,515],[692,387],[706,292],[746,177],[785,118],[821,82],[867,55],[899,50],[922,109],[938,233]],[[537,587],[555,560],[562,537],[532,439],[492,340],[466,291],[411,214],[356,158],[316,128]],[[367,476],[566,259],[604,204],[617,160]]]},"雨":{"strokes":["M 502 676 Q 587 689 679 701 Q 743 711 753 719 Q 763 726 758 736 Q 752 749 723 758 Q 692 767 661 756 Q 588 737 509 722 Q 422 709 321 705 Q 284 701 308 682 Q 350 655 424 667 Q 440 670 458 670 L 502 676 Z","M 219 488 Q 191 512 164 517 Q 158 520 153 513 Q 149 506 153 492 Q 184 438 187 392 Q 196 284 185 165 Q 181 140 192 118 Q 205 97 224 84 Q 239 75 241 87 Q 248 91 250 115 Q 256 142 246 231 Q 234 390 234 450 C 234 476 234 476 219 488 Z","M 529 507 Q 559 514 789 532 Q 808 533 814 524 Q 824 517 822 466 Q 816 258 783 141 Q 773 105 742 111 Q 703 120 668 127 Q 655 131 654 125 Q 653 118 664 107 Q 740 49 761 17 Q 771 -1 784 2 Q 800 3 815 33 Q 843 76 852 129 Q 868 199 882 446 Q 885 491 899 515 Q 917 537 903 542 Q 887 558 849 576 Q 825 592 799 581 Q 763 571 672 560 Q 596 553 530 543 L 485 536 Q 430 529 386 519 Q 301 501 219 488 C 189 483 206 440 234 450 Q 255 468 486 500 L 529 507 Z","M 530 543 Q 531 589 541 623 Q 548 636 546 646 Q 540 653 502 676 C 476 692 443 696 458 670 Q 458 669 460 665 Q 482 635 483 604 Q 484 573 485 536 L 486 500 Q 486 281 474 230 Q 459 203 485 142 Q 491 127 497 125 Q 503 119 508 126 Q 515 130 523 147 Q 530 166 530 193 Q 529 224 529 507 L 530 543 Z","M 327 380 Q 378 347 405 341 Q 415 341 420 352 Q 423 362 418 373 Q 399 409 331 409 L 330 409 Q 317 410 312 406 Q 308 405 311 396 Q 314 389 327 380 Z","M 319 246 Q 370 206 395 201 Q 407 201 412 212 Q 415 222 411 235 Q 404 253 388 260 Q 369 270 324 277 Q 311 278 304 275 Q 300 274 303 264 Q 306 255 319 246 Z","M 611 413 Q 669 383 697 382 Q 709 383 712 395 Q 713 407 707 418 Q 689 445 632 445 Q 598 445 591 439 Q 587 436 592 428 Q 596 419 611 413 Z","M 609 269 Q 658 233 686 228 Q 699 228 704 240 Q 707 252 702 264 Q 684 297 633 300 Q 600 304 592 299 Q 588 298 591 287 Q 594 278 609 269 Z"],"medians":[[[312,695],[343,687],[396,686],[520,701],[698,734],[747,730]],[[162,506],[196,471],[209,425],[217,303],[218,146],[232,89]],[[232,457],[246,475],[259,479],[510,523],[813,557],[845,540],[855,530],[858,511],[840,271],[826,174],[808,104],[780,69],[679,109],[661,123]],[[465,670],[498,651],[511,625],[507,312],[499,210],[502,136]],[[318,400],[372,381],[405,357]],[[310,269],[373,239],[396,218]],[[598,434],[670,415],[697,398]],[[598,292],[663,266],[687,246]]]},"云":{"strokes":["M 351 652 Q 311 645 339 627 Q 382 600 444 615 Q 546 634 651 656 Q 700 666 707 673 Q 716 682 711 691 Q 704 704 672 712 Q 648 718 540 685 Q 444 661 351 652 Z","M 512 420 Q 633 436 814 438 Q 893 435 900 448 Q 906 461 887 476 Q 830 518 772 506 Q 613 473 146 409 Q 122 406 140 387 Q 156 372 176 366 Q 198 360 217 366 Q 323 397 446 411 L 512 420 Z","M 689 193 Q 535 174 377 151 Q 364 148 362 152 Q 359 156 367 167 Q 482 339 527 384 Q 543 399 532 409 Q 525 416 512 420 C 486 435 448 441 446 411 Q 446 305 322 179 Q 298 160 266 138 Q 221 122 244 75 Q 254 53 268 47 Q 277 43 288 49 Q 417 122 698 169 Q 701 170 705 171 C 734 177 719 197 689 193 Z","M 705 171 Q 736 128 771 75 Q 784 51 799 44 Q 808 41 817 50 Q 833 62 827 110 Q 823 176 643 294 Q 636 301 631 288 Q 627 275 637 262 Q 662 231 689 193 L 705 171 Z"],"medians":[[[342,641],[365,634],[416,634],[645,684],[699,684]],[[143,398],[197,389],[410,428],[775,472],[816,473],[890,455]],[[521,398],[496,391],[475,374],[421,274],[344,172],[325,121],[374,120],[575,163],[652,176],[700,176]],[[642,281],[776,136],[796,97],[804,61]]]},"雪":{"strokes":["M 513 714 Q 574 726 644 736 Q 687 743 693 749 Q 703 758 699 767 Q 692 780 661 789 Q 631 795 529 768 Q 415 750 368 747 Q 328 743 356 723 Q 401 696 461 707 Q 464 708 469 707 L 513 714 Z","M 257 587 Q 247 609 236 617 Q 217 633 214 605 Q 220 563 149 489 Q 125 464 155 403 Q 170 375 193 403 Q 212 431 227 471 Q 257 550 261 554 C 267 566 267 566 257 587 Z","M 532 593 Q 706 626 761 617 Q 777 608 776 601 Q 754 556 731 508 Q 731 507 733 505 Q 740 501 757 511 Q 815 548 863 559 Q 903 571 902 580 Q 901 590 831 646 Q 809 665 723 650 Q 611 638 534 624 L 487 618 Q 432 612 371 601 Q 313 592 257 587 C 227 584 232 562 261 554 Q 286 542 318 551 Q 420 582 489 587 L 532 593 Z","M 489 587 Q 489 500 472 392 Q 460 350 492 314 Q 501 304 510 314 Q 531 344 531 442 Q 531 517 532 593 L 534 624 Q 535 649 540 672 Q 547 694 527 705 Q 520 709 513 714 C 488 731 460 736 469 707 Q 469 706 470 702 Q 486 663 487 618 L 489 587 Z","M 331 478 Q 368 445 395 437 Q 407 437 412 448 Q 415 458 411 471 Q 404 489 389 497 Q 364 509 325 510 Q 319 510 316 507 Q 312 506 315 496 Q 316 487 331 478 Z","M 316 365 Q 353 332 378 328 Q 391 328 396 340 Q 399 350 394 365 Q 385 383 369 391 Q 321 407 300 395 Q 296 394 299 383 Q 302 374 316 365 Z","M 597 512 Q 648 481 676 475 Q 688 476 692 488 Q 693 498 689 511 Q 668 542 599 543 Q 586 543 579 539 Q 575 536 579 528 Q 583 519 597 512 Z","M 587 406 Q 635 370 659 365 Q 671 364 676 376 Q 679 386 675 399 Q 660 426 592 437 Q 579 438 572 435 Q 568 434 571 424 Q 574 415 587 406 Z","M 687 60 Q 718 190 764 225 Q 783 246 767 266 Q 748 282 690 311 Q 671 321 645 311 Q 513 268 325 257 Q 306 256 307 245 Q 310 236 330 228 Q 358 213 398 225 Q 510 240 617 256 Q 645 260 655 249 Q 668 236 665 210 Q 652 131 634 67 C 626 38 680 31 687 60 Z","M 293 143 Q 265 140 286 123 Q 316 98 344 104 Q 467 126 597 137 Q 607 136 616 147 Q 617 157 596 169 Q 566 191 490 169 Q 474 168 456 163 Q 405 153 360 149 Q 329 148 293 143 Z","M 634 67 Q 631 68 628 67 Q 445 33 299 23 Q 275 22 289 0 Q 296 -10 308 -16 Q 321 -20 336 -17 Q 453 5 703 16 Q 716 17 718 27 Q 719 37 687 60 L 634 67 Z"],"medians":[[[359,737],[395,728],[449,730],[630,762],[685,762]],[[225,610],[233,595],[234,568],[213,516],[179,460],[172,407]],[[265,582],[284,568],[679,632],[760,637],[792,629],[808,618],[821,595],[738,511]],[[477,706],[510,679],[508,493],[497,362],[501,320]],[[323,501],[379,473],[396,454]],[[308,388],[353,369],[379,346]],[[586,534],[653,510],[675,492]],[[578,429],[649,394],[661,381]],[[317,246],[373,240],[633,282],[672,280],[712,243],[667,89],[641,72]],[[288,134],[335,125],[538,155],[566,157],[606,149]],[[296,11],[327,3],[624,40],[684,38],[708,28]]]}},INFO={"风":{"py":"fēng","en":"wind"},"雨":{"py":"yǔ","en":"rain"},"云":{"py":"yún","en":"cloud"},"雪":{"py":"xuě","en":"snow"}};
+(function(){
+var NS='http://www.w3.org/2000/svg',seq=0,cur=START,big=document.getElementById('big'),py=document.getElementById('py'),sq=document.getElementById('sq');
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var raf=0,showEn=false;
+function fit(el,max,min){el.style.fontSize=max+'px';var s=max;while(el.scrollWidth>el.clientWidth+1&&s>min){s-=1;el.style.fontSize=s+'px';}}
+function build(ch){
+  var d=DATA[ch];var id='c'+(++seq);var h='<svg viewBox="0 0 1024 1024" xmlns="'+NS+'" aria-hidden="true">';
+  h+='<path d="M0 0L1024 1024M1024 0L0 1024M512 0V1024M0 512H1024" stroke="#cdbfa8" stroke-width="5" stroke-dasharray="20 16" fill="none"/>';
+  h+='<g transform="scale(1,-1) translate(0,-900)"><defs>';
+  d.strokes.forEach(function(s,i){h+='<clipPath id="'+id+'_'+i+'"><path d="'+s+'"/></clipPath>';});
+  h+='</defs>';
+  d.strokes.forEach(function(s){h+='<path d="'+s+'" fill="#1b1b1b" fill-opacity=".1"/>';});
+  h+='<g class="ink">';
+  d.medians.forEach(function(m,i){
+    var p='M'+m.map(function(q){return q[0]+' '+q[1];}).join('L');
+    h+='<g clip-path="url(#'+id+'_'+i+')"><path class="md" d="'+p+'" pathLength="1" fill="none" stroke="#1b1b1b" stroke-width="190" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1" style="visibility:hidden"/></g>';
+  });
+  h+='</g></g></svg>';
+  sq.innerHTML=h;
+}
+function lens(svg){return Array.prototype.map.call(svg.querySelectorAll('.md'),function(p){return p;});}
+function play(){
+  cancelAnimationFrame(raf);
+  var svg=sq.firstChild,mds=lens(svg),ink=svg.querySelector('.ink');
+  if(reduce){mds.forEach(function(p){p.style.visibility='visible';p.setAttribute('stroke-dashoffset','0');});return;}
+  var durs=mds.map(function(p){var L=0,pts=DATA[cur].medians[mds.indexOf(p)];for(var i=1;i<pts.length;i++){L+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);}return Math.min(1.0,Math.max(.5,L/1500+.25));});
+  var gap=.16,starts=[],T=0;durs.forEach(function(d){starts.push(T);T+=d+gap;});
+  var hold=1.5,fade=.6,cyc=T+hold+fade,t0=performance.now();
+  function frame(now){
+    var t=((now-t0)/1000)%cyc;
+    mds.forEach(function(p,i){
+      var x=Math.min(1,Math.max(0,(t-starts[i])/durs[i]));
+      x=x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+      if(t>=T)x=1;
+      if(x<=.002){p.style.visibility='hidden';}else{p.style.visibility='visible';p.setAttribute('stroke-dashoffset',String(1-x));}
+    });
+    ink.style.opacity=t>T+hold?String(Math.max(0,1-(t-T-hold)/fade)):'1';
+    raf=requestAnimationFrame(frame);
+  }
+  raf=requestAnimationFrame(frame);
+}
+function refreshBig(){
+  var i=INFO[cur];
+  if(showEn){big.classList.add('en');big.textContent=i.en;py.classList.add('hide');fit(big,Math.min(86,Math.round(innerWidth*.22)),18);}
+  else{big.classList.remove('en');big.textContent=cur;big.style.fontSize='';py.classList.remove('hide');py.textContent=i.py;}
+}
+big.addEventListener('click',function(){showEn=!showEn;refreshBig();});
+function setChar(ch){
+  cur=ch;showEn=false;refreshBig();build(ch);play();
+  var ps=document.querySelectorAll('.pic-svg');for(var k=0;k<ps.length;k++){ps[k].classList.toggle('on',ps[k].getAttribute('data-ch')===ch);}
+  var vs=document.querySelectorAll('.vb');for(var j=0;j<vs.length;j++){vs[j].setAttribute('aria-pressed',vs[j].getAttribute('data-ch')===ch?'true':'false');}
+}
+Array.prototype.forEach.call(document.querySelectorAll('.vb'),function(b){b.addEventListener('click',function(){setChar(b.getAttribute('data-ch'));});});
+Array.prototype.forEach.call(document.querySelectorAll('.wd'),function(b){
+  var t=b.querySelector('.wt');
+  b.addEventListener('click',function(){
+    var en=!b.classList.contains('en');b.classList.toggle('en',en);
+    t.textContent=en?b.getAttribute('data-en'):b.getAttribute('data-zh');
+    if(en){fit(t,26,12);}else{t.style.fontSize='';}
+  });
+});
+function refit(){if(showEn)refreshBig();Array.prototype.forEach.call(document.querySelectorAll('.wd.en .wt'),function(t){fit(t,26,12);});}
+addEventListener('resize',refit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refit);
+setChar(START);
+})();
+</script>
+</body></html>

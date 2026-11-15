@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>多 · 春晓</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--paper:#f6efdf;--paper2:#fffdf6;--ink:#1b1b1b;--red:#b5342a;--line:#8a8578;--wash:#ece6d6;color-scheme:light}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper) url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'.8'%20numOctaves%3D'3'%20seed%3D'4'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%20.45%20%200%200%200%200%20.38%20%200%200%200%200%20.25%20%200%200%200%20.09%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'300'%20height%3D'300'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");color:var(--ink);font-family:'Noto Serif SC','Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+button{font-family:inherit;color:inherit}
+a{color:inherit}
+.ic{display:block}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.wrap{max-width:520px;margin:0 auto;padding:14px 16px 30px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.picbox{width:100%;max-width:340px;aspect-ratio:4/3;border:3px solid var(--ink);border-radius:6px;background:var(--paper2);overflow:hidden}
+.picbox .pic-svg{display:none;width:100%;height:100%}
+.picbox .pic-svg.on{display:block}
+.sq{width:min(100%,340px);aspect-ratio:1;border:3px solid var(--ink);border-radius:6px;background:var(--paper2)}
+.sq svg{width:100%;height:100%;display:block}
+.mid{display:flex;flex-direction:column;align-items:center;gap:0;width:100%}
+.py{height:36px;font-size:27px;font-weight:600;letter-spacing:.04em;line-height:36px;transition:opacity .15s}
+.py.hide{opacity:0}
+.big{width:100%;max-width:340px;min-height:132px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;cursor:pointer;font-family:'Ma Shan Zheng','KaiTi','STKaiti','Kaiti SC',serif;font-size:clamp(100px,34vw,140px);line-height:1.05;color:var(--ink);overflow:hidden;white-space:nowrap}
+.big.en{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600;color:var(--red)}
+.vars{display:flex;gap:8px;width:100%;max-width:420px}
+.vb{flex:1 1 0;min-width:0;min-height:64px;padding:0 2px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);font-size:clamp(15px,4.7vw,21px);cursor:pointer;white-space:nowrap}
+.vb[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+h2{margin:6px 0 0;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;font-weight:400;font-size:34px;letter-spacing:.04em}
+.words{display:flex;flex-direction:column;gap:10px;width:100%;max-width:420px}
+.wd{display:flex;align-items:center;gap:12px;min-height:68px;padding:8px 14px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);cursor:pointer;text-align:left}
+.wd.en{border-color:var(--red)}
+.wd .ic{width:44px;height:44px;flex:none}
+.wt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;font-size:28px;line-height:1.25}
+.wd.en .wt{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600}
+.back{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:64px;margin-top:6px;border:3px solid var(--ink);border-radius:14px;background:var(--wash);text-decoration:none;font-size:26px;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;letter-spacing:.1em}
+</style></head>
+<body><main class="wrap">
+<div class="picbox"><svg data-ch="多" class="pic-svg on" viewBox="0 0 240 180" role="img" aria-label="多" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><circle cx="10" cy="11" r="4.6" fill="#ece6d6"/><path d="M10 6.4v-2.5M10 5.4c2-2 4-2 5-1"/><circle cx="24" cy="11" r="4.6" fill="#ece6d6"/><path d="M24 6.4v-2.5M24 5.4c2-2 4-2 5-1"/><circle cx="38" cy="11" r="4.6" fill="#ece6d6"/><path d="M38 6.4v-2.5M38 5.4c2-2 4-2 5-1"/><circle cx="13" cy="25" r="4.6" fill="#ece6d6"/><path d="M13 20.4v-2.5M13 19.4c2-2 4-2 5-1"/><circle cx="27" cy="25" r="4.6" fill="#ece6d6"/><path d="M27 20.4v-2.5M27 19.4c2-2 4-2 5-1"/><circle cx="41" cy="25" r="4.6" fill="#ece6d6"/><path d="M41 20.4v-2.5M41 19.4c2-2 4-2 5-1"/><circle cx="10" cy="39" r="4.6" fill="#ece6d6"/><path d="M10 34.4v-2.5M10 33.4c2-2 4-2 5-1"/><circle cx="24" cy="39" r="4.6" fill="#ece6d6"/><path d="M24 34.4v-2.5M24 33.4c2-2 4-2 5-1"/><circle cx="38" cy="39" r="4.6" fill="#ece6d6"/><path d="M38 34.4v-2.5M38 33.4c2-2 4-2 5-1"/></g></svg><svg data-ch="少" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="少" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><circle cx="17" cy="28" r="6.5" fill="#ece6d6"/><path d="M17 21.5v-2.5M17 20.5c2-2 4-2 5-1"/><circle cx="32" cy="28" r="6.5" fill="#ece6d6"/><path d="M32 21.5v-2.5M32 20.5c2-2 4-2 5-1"/><path d="M2 36H46" /></g></svg></div>
+<div class="sq" id="sq" role="img" aria-label="多"></div>
+<div class="mid"><div class="py" id="py">duō</div><button class="big" id="big" type="button" aria-label="多">多</button></div>
+<div class="vars"><button class="vb" type="button" data-ch="多" aria-pressed="true">很多</button><button class="vb" type="button" data-ch="少" aria-pressed="false">很少</button></div>
+<h2>Good friends</h2>
+<div class="words"><button class="wd" type="button" data-zh="很多" data-en="many"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="3.8" fill="#1b1b1b"/><circle cx="10" cy="24" r="3.8" fill="#1b1b1b"/><circle cx="10" cy="38" r="3.8" fill="#1b1b1b"/><circle cx="24" cy="10" r="3.8" fill="#1b1b1b"/><circle cx="24" cy="24" r="3.8" fill="#1b1b1b"/><circle cx="24" cy="38" r="3.8" fill="#1b1b1b"/><circle cx="38" cy="10" r="3.8" fill="#1b1b1b"/><circle cx="38" cy="24" r="3.8" fill="#1b1b1b"/><circle cx="38" cy="38" r="3.8" fill="#1b1b1b"/></svg><span class="wt">很多</span></button><button class="wd" type="button" data-zh="多云" data-en="cloudy"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="17" cy="16" r="7" fill="#ece6d6"/><path d="M27.0 16.0L31.0 16.0M24.1 23.1L26.9 25.9M17.0 26.0L17.0 30.0M9.9 23.1L7.1 25.9M7.0 16.0L3.0 16.0M9.9 8.9L7.1 6.1M17.0 6.0L17.0 2.0M24.1 8.9L26.9 6.1"/><path transform="translate(6 17) scale(1.05)" d="M10 24C3 24 2 14 9 13C9 6 20 4 23 10C28 5 38 9 35 16C41 17 40 24 33 24Z" fill="#ece6d6"/></svg><span class="wt">多云</span></button><button class="wd" type="button" data-zh="多谢" data-en="thanks"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="19" width="36" height="24" fill="#ece6d6"/><rect x="4" y="12" width="40" height="8" fill="#fffdf6"/><path d="M24 12V43M24 12C14 0 8 9 24 12ZM24 12C34 0 40 9 24 12Z"/></svg><span class="wt">多谢</span></button></div>
+<a class="back" href="./">回到诗</a>
+</main>
+<script>var START="多",DATA={"多":{"strokes":["M 371 636 Q 419 669 477 726 L 493 742 Q 512 761 532 779 Q 545 788 535 806 Q 502 848 476 850 Q 466 851 464 836 Q 449 728 308 638 Q 274 617 256 603 Q 244 590 260 592 Q 278 592 352 625 L 371 636 Z","M 477 726 Q 476 726 477 725 Q 502 698 593 715 Q 612 716 618 708 Q 621 701 605 681 Q 553 605 464 527 Q 389 463 247 377 Q 231 367 246 364 Q 336 364 535 524 Q 538 528 543 531 Q 604 583 666 650 Q 690 677 729 701 Q 747 710 742 721 Q 741 731 681 764 Q 666 776 611 755 Q 512 743 493 742 C 463 739 458 739 477 726 Z","M 352 625 Q 355 618 373 599 Q 391 580 411 555 Q 420 545 432 543 Q 441 543 445 553 Q 449 563 446 587 Q 443 603 421 616 Q 400 625 371 636 C 343 647 339 648 352 625 Z","M 400 284 Q 499 359 524 381 L 552 409 Q 588 446 606 461 Q 616 471 614 481 Q 613 493 589 502 Q 564 512 551 511 Q 544 510 541 498 Q 511 405 285 251 Q 264 238 290 240 Q 324 243 375 270 L 400 284 Z","M 524 381 Q 564 360 646 388 Q 671 392 681 385 Q 688 378 658 323 Q 529 64 193 -47 Q 181 -50 182 -56 Q 182 -62 191 -62 Q 219 -66 283 -52 Q 344 -39 410 -4 Q 489 36 569 111 Q 648 184 734 311 Q 756 341 788 358 Q 807 365 808 376 Q 809 391 779 414 Q 742 445 725 447 Q 712 447 698 439 Q 641 424 552 409 C 522 404 495 389 524 381 Z","M 375 270 Q 375 267 460 175 Q 470 162 485 162 Q 495 161 501 173 Q 507 186 501 214 Q 495 247 400 284 C 372 295 358 294 375 270 Z"],"medians":[[[476,838],[494,796],[452,737],[366,655],[336,634],[262,599]],[[484,726],[630,734],[666,717],[645,678],[606,630],[494,520],[354,421],[250,370]],[[358,625],[407,597],[421,583],[432,557]],[[596,478],[567,472],[505,397],[398,306],[331,264],[295,249]],[[531,383],[672,411],[722,402],[734,384],[682,294],[619,204],[510,93],[428,34],[338,-13],[270,-39],[190,-54]],[[382,273],[402,266],[460,220],[486,178]]]},"少":{"strokes":["M 460 783 Q 502 714 482 443 Q 473 374 489 351 Q 489 348 492 344 Q 502 326 519 336 Q 529 345 531 420 Q 522 519 543 673 Q 544 704 564 743 Q 571 753 558 768 Q 501 816 468 804 Q 453 800 460 783 Z","M 292 583 Q 261 510 217 446 Q 193 406 212 371 Q 219 350 244 364 Q 269 382 286 417 Q 314 469 319 517 Q 326 554 318 582 Q 314 592 306 593 Q 296 592 292 583 Z","M 698 588 Q 747 542 807 475 Q 823 454 840 449 Q 849 448 857 459 Q 870 472 857 519 Q 848 561 773 593 Q 725 612 699 620 Q 689 626 687 613 Q 687 598 698 588 Z","M 643 470 Q 625 293 421 130 Q 405 120 388 107 Q 325 58 176 -19 Q 166 -26 172 -31 Q 181 -35 195 -33 Q 292 -11 382 38 Q 538 117 674 338 Q 698 374 726 407 Q 738 416 734 430 Q 728 443 696 471 Q 674 490 661 490 Q 645 489 643 470 Z"],"medians":[[[470,791],[489,781],[518,745],[505,478],[509,346]],[[305,582],[287,502],[227,374]],[[698,608],[798,540],[821,514],[841,466]],[[662,471],[678,436],[679,417],[605,284],[513,172],[439,107],[375,64],[270,8],[179,-27]]]}},INFO={"多":{"py":"duō","en":"many"},"少":{"py":"shǎo","en":"few"}};
+(function(){
+var NS='http://www.w3.org/2000/svg',seq=0,cur=START,big=document.getElementById('big'),py=document.getElementById('py'),sq=document.getElementById('sq');
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var raf=0,showEn=false;
+function fit(el,max,min){el.style.fontSize=max+'px';var s=max;while(el.scrollWidth>el.clientWidth+1&&s>min){s-=1;el.style.fontSize=s+'px';}}
+function build(ch){
+  var d=DATA[ch];var id='c'+(++seq);var h='<svg viewBox="0 0 1024 1024" xmlns="'+NS+'" aria-hidden="true">';
+  h+='<path d="M0 0L1024 1024M1024 0L0 1024M512 0V1024M0 512H1024" stroke="#cdbfa8" stroke-width="5" stroke-dasharray="20 16" fill="none"/>';
+  h+='<g transform="scale(1,-1) translate(0,-900)"><defs>';
+  d.strokes.forEach(function(s,i){h+='<clipPath id="'+id+'_'+i+'"><path d="'+s+'"/></clipPath>';});
+  h+='</defs>';
+  d.strokes.forEach(function(s){h+='<path d="'+s+'" fill="#1b1b1b" fill-opacity=".1"/>';});
+  h+='<g class="ink">';
+  d.medians.forEach(function(m,i){
+    var p='M'+m.map(function(q){return q[0]+' '+q[1];}).join('L');
+    h+='<g clip-path="url(#'+id+'_'+i+')"><path class="md" d="'+p+'" pathLength="1" fill="none" stroke="#1b1b1b" stroke-width="190" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1" style="visibility:hidden"/></g>';
+  });
+  h+='</g></g></svg>';
+  sq.innerHTML=h;
+}
+function lens(svg){return Array.prototype.map.call(svg.querySelectorAll('.md'),function(p){return p;});}
+function play(){
+  cancelAnimationFrame(raf);
+  var svg=sq.firstChild,mds=lens(svg),ink=svg.querySelector('.ink');
+  if(reduce){mds.forEach(function(p){p.style.visibility='visible';p.setAttribute('stroke-dashoffset','0');});return;}
+  var durs=mds.map(function(p){var L=0,pts=DATA[cur].medians[mds.indexOf(p)];for(var i=1;i<pts.length;i++){L+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);}return Math.min(1.0,Math.max(.5,L/1500+.25));});
+  var gap=.16,starts=[],T=0;durs.forEach(function(d){starts.push(T);T+=d+gap;});
+  var hold=1.5,fade=.6,cyc=T+hold+fade,t0=performance.now();
+  function frame(now){
+    var t=((now-t0)/1000)%cyc;
+    mds.forEach(function(p,i){
+      var x=Math.min(1,Math.max(0,(t-starts[i])/durs[i]));
+      x=x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+      if(t>=T)x=1;
+      if(x<=.002){p.style.visibility='hidden';}else{p.style.visibility='visible';p.setAttribute('stroke-dashoffset',String(1-x));}
+    });
+    ink.style.opacity=t>T+hold?String(Math.max(0,1-(t-T-hold)/fade)):'1';
+    raf=requestAnimationFrame(frame);
+  }
+  raf=requestAnimationFrame(frame);
+}
+function refreshBig(){
+  var i=INFO[cur];
+  if(showEn){big.classList.add('en');big.textContent=i.en;py.classList.add('hide');fit(big,Math.min(86,Math.round(innerWidth*.22)),18);}
+  else{big.classList.remove('en');big.textContent=cur;big.style.fontSize='';py.classList.remove('hide');py.textContent=i.py;}
+}
+big.addEventListener('click',function(){showEn=!showEn;refreshBig();});
+function setChar(ch){
+  cur=ch;showEn=false;refreshBig();build(ch);play();
+  var ps=document.querySelectorAll('.pic-svg');for(var k=0;k<ps.length;k++){ps[k].classList.toggle('on',ps[k].getAttribute('data-ch')===ch);}
+  var vs=document.querySelectorAll('.vb');for(var j=0;j<vs.length;j++){vs[j].setAttribute('aria-pressed',vs[j].getAttribute('data-ch')===ch?'true':'false');}
+}
+Array.prototype.forEach.call(document.querySelectorAll('.vb'),function(b){b.addEventListener('click',function(){setChar(b.getAttribute('data-ch'));});});
+Array.prototype.forEach.call(document.querySelectorAll('.wd'),function(b){
+  var t=b.querySelector('.wt');
+  b.addEventListener('click',function(){
+    var en=!b.classList.contains('en');b.classList.toggle('en',en);
+    t.textContent=en?b.getAttribute('data-en'):b.getAttribute('data-zh');
+    if(en){fit(t,26,12);}else{t.style.fontSize='';}
+  });
+});
+function refit(){if(showEn)refreshBig();Array.prototype.forEach.call(document.querySelectorAll('.wd.en .wt'),function(t){fit(t,26,12);});}
+addEventListener('resize',refit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refit);
+setChar(START);
+})();
+</script>
+</body></html>

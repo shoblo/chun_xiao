@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>花 · 春晓</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--paper:#f6efdf;--paper2:#fffdf6;--ink:#1b1b1b;--red:#b5342a;--line:#8a8578;--wash:#ece6d6;color-scheme:light}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper) url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'.8'%20numOctaves%3D'3'%20seed%3D'4'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%20.45%20%200%200%200%200%20.38%20%200%200%200%200%20.25%20%200%200%200%20.09%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'300'%20height%3D'300'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");color:var(--ink);font-family:'Noto Serif SC','Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+button{font-family:inherit;color:inherit}
+a{color:inherit}
+.ic{display:block}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.wrap{max-width:520px;margin:0 auto;padding:14px 16px 30px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.picbox{width:100%;max-width:340px;aspect-ratio:4/3;border:3px solid var(--ink);border-radius:6px;background:var(--paper2);overflow:hidden}
+.picbox .pic-svg{display:none;width:100%;height:100%}
+.picbox .pic-svg.on{display:block}
+.sq{width:min(100%,340px);aspect-ratio:1;border:3px solid var(--ink);border-radius:6px;background:var(--paper2)}
+.sq svg{width:100%;height:100%;display:block}
+.mid{display:flex;flex-direction:column;align-items:center;gap:0;width:100%}
+.py{height:36px;font-size:27px;font-weight:600;letter-spacing:.04em;line-height:36px;transition:opacity .15s}
+.py.hide{opacity:0}
+.big{width:100%;max-width:340px;min-height:132px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;cursor:pointer;font-family:'Ma Shan Zheng','KaiTi','STKaiti','Kaiti SC',serif;font-size:clamp(100px,34vw,140px);line-height:1.05;color:var(--ink);overflow:hidden;white-space:nowrap}
+.big.en{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600;color:var(--red)}
+.vars{display:flex;gap:8px;width:100%;max-width:420px}
+.vb{flex:1 1 0;min-width:0;min-height:64px;padding:0 2px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);font-size:clamp(15px,4.7vw,21px);cursor:pointer;white-space:nowrap}
+.vb[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+h2{margin:6px 0 0;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;font-weight:400;font-size:34px;letter-spacing:.04em}
+.words{display:flex;flex-direction:column;gap:10px;width:100%;max-width:420px}
+.wd{display:flex;align-items:center;gap:12px;min-height:68px;padding:8px 14px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);cursor:pointer;text-align:left}
+.wd.en{border-color:var(--red)}
+.wd .ic{width:44px;height:44px;flex:none}
+.wt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;font-size:28px;line-height:1.25}
+.wd.en .wt{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600}
+.back{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:64px;margin-top:6px;border:3px solid var(--ink);border-radius:14px;background:var(--wash);text-decoration:none;font-size:26px;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;letter-spacing:.1em}
+</style></head>
+<body><main class="wrap">
+<div class="picbox"><svg data-ch="花" class="pic-svg on" viewBox="0 0 240 180" role="img" aria-label="花" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><circle cx="24.0" cy="7.5" r="7.5" fill="#fffdf6"/><circle cx="33.0" cy="14.1" r="7.5" fill="#fffdf6"/><circle cx="29.6" cy="24.7" r="7.5" fill="#fffdf6"/><circle cx="18.4" cy="24.7" r="7.5" fill="#fffdf6"/><circle cx="15.0" cy="14.1" r="7.5" fill="#fffdf6"/><circle cx="24" cy="17" r="4.875" fill="#c8c1ad"/><path d="M24 28V46"/><path d="M24 42C15 42 11 38 10 33C19 33 23 37 24 42Z" fill="#ece6d6"/><path d="M24 38C31 38 34 35 35 31C28 31 25 34 24 38Z" fill="#ece6d6"/></g></svg><svg data-ch="草" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="草" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><path d="M10 44C10 32 8 22 3 13M19 44C19 28 21 16 19 5M28 44C28 30 34 22 41 14M37 44C37 35 39 30 45 26M24 44C24 36 24 32 26 24" /><path d="M2 44H46"/><circle cx="19.0" cy="1.8" r="2.6" fill="#fffdf6"/><circle cx="22.0" cy="4.0" r="2.6" fill="#fffdf6"/><circle cx="20.9" cy="7.6" r="2.6" fill="#fffdf6"/><circle cx="17.1" cy="7.6" r="2.6" fill="#fffdf6"/><circle cx="16.0" cy="4.0" r="2.6" fill="#fffdf6"/><circle cx="19" cy="5" r="1.6900000000000002" fill="#c8c1ad"/></g></svg><svg data-ch="木" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="木" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><path d="M20 45V28H28V45Z" fill="#ece6d6"/><path transform="translate(0 1) scale(1.18)" d="M10 24C3 24 2 14 9 13C9 6 20 4 23 10C28 5 38 9 35 16C41 17 40 24 33 24Z" fill="#ece6d6"/><path d="M24 28V22M24 24L19 20M24 25L29 20"/><path d="M14 45H34"/><circle cx="14" cy="12" r="1.1" fill="#1b1b1b"/><circle cx="30" cy="9" r="1.1" fill="#1b1b1b"/></g></svg><svg data-ch="叶" class="pic-svg" viewBox="0 0 240 180" role="img" aria-label="叶" fill="none" stroke="#1b1b1b" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(35 4) scale(3.6)"><g transform="translate(0 0) rotate(0 24 24) scale(1)"><path d="M8 38C8 20 20 8 40 8C40 28 30 40 14 40C11 40 9 39 8 38Z" fill="#ece6d6"/><path d="M8 40L34 14"/></g><path d="M8 40L4 45"/><path d="M16 34L22 36M20 30L26 31M24 26L29 26M17 30L16 24"/></g></svg></div>
+<div class="sq" id="sq" role="img" aria-label="花"></div>
+<div class="mid"><div class="py" id="py">huā</div><button class="big" id="big" type="button" aria-label="花">花</button></div>
+<div class="vars"><button class="vb" type="button" data-ch="花" aria-pressed="true">花朵</button><button class="vb" type="button" data-ch="草" aria-pressed="false">小草</button><button class="vb" type="button" data-ch="木" aria-pressed="false">树木</button><button class="vb" type="button" data-ch="叶" aria-pressed="false">叶子</button></div>
+<h2>Good friends</h2>
+<div class="words"><button class="wd" type="button" data-zh="花朵" data-en="flower"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24.0" cy="10.0" r="6" fill="#fffdf6"/><circle cx="31.6" cy="15.5" r="6" fill="#fffdf6"/><circle cx="28.7" cy="24.5" r="6" fill="#fffdf6"/><circle cx="19.3" cy="24.5" r="6" fill="#fffdf6"/><circle cx="16.4" cy="15.5" r="6" fill="#fffdf6"/><circle cx="24" cy="18" r="3.9000000000000004" fill="#c8c1ad"/><path d="M24 28V44"/><path d="M24 40C17 40 14 37 13 33C20 33 23 36 24 40Z" fill="#ece6d6"/></svg><span class="wt">花朵</span></button><button class="wd" type="button" data-zh="花瓶" data-en="vase"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 14h12C30 24 40 26 40 36c0 7-7 8-16 8s-16-1-16-8c0-10 10-12 10-22Z" fill="#ece6d6"/><path d="M22 14L15 7M26 14L33 7M24 14V5"/><circle cx="14" cy="5" r="3.6" fill="#c8c1ad"/><circle cx="34" cy="5" r="3.6" fill="#c8c1ad"/><circle cx="24" cy="3" r="3.2" fill="#c8c1ad"/></svg><span class="wt">花瓶</span></button><button class="wd" type="button" data-zh="花园" data-en="garden"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="14.0" cy="10.4" r="3.6" fill="#fffdf6"/><circle cx="18.4" cy="13.6" r="3.6" fill="#fffdf6"/><circle cx="16.7" cy="18.7" r="3.6" fill="#fffdf6"/><circle cx="11.3" cy="18.7" r="3.6" fill="#fffdf6"/><circle cx="9.6" cy="13.6" r="3.6" fill="#fffdf6"/><circle cx="14" cy="15" r="2.3400000000000003" fill="#c8c1ad"/><circle cx="31.0" cy="6.4" r="3.6" fill="#fffdf6"/><circle cx="35.4" cy="9.6" r="3.6" fill="#fffdf6"/><circle cx="33.7" cy="14.7" r="3.6" fill="#fffdf6"/><circle cx="28.3" cy="14.7" r="3.6" fill="#fffdf6"/><circle cx="26.6" cy="9.6" r="3.6" fill="#fffdf6"/><circle cx="31" cy="11" r="2.3400000000000003" fill="#c8c1ad"/><path d="M14 21V34M31 17V34M41 24V34"/><circle cx="41" cy="22" r="3.6" fill="#c8c1ad"/><path d="M3 34H45M3 41H45"/><path d="M7 45V30l3-3 3 3V45M20 45V30l3-3 3 3V45M33 45V30l3-3 3 3V45" fill="#ece6d6"/></svg><span class="wt">花园</span></button><button class="wd" type="button" data-zh="花生" data-en="peanut"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(35 24 24)"><path d="M17 5c-6 0-9 6-7 11 1 4 5 5 5 9s-3 6-1 11c2 5 10 5 13 0 3-4 0-7 0-11s4-5 5-9c2-5-1-11-7-11Z" fill="#ece6d6"/><path d="M17 12h1M25 14h1M17 33h1M24 30h1"/></g></svg><span class="wt">花生</span></button></div>
+<a class="back" href="./">回到诗</a>
+</main>
+<script>var START="花",DATA={"花":{"strokes":["M 628 661 Q 842 661 852 668 Q 853 669 855 671 Q 861 683 844 697 Q 786 742 719 724 Q 686 718 647 711 L 588 701 Q 509 695 413 678 L 364 672 Q 270 663 169 651 Q 147 650 163 631 Q 178 616 196 611 Q 218 605 235 609 Q 299 627 372 637 L 416 643 Q 455 653 577 659 L 628 661 Z","M 413 678 Q 409 718 408 750 Q 409 771 389 777 Q 344 795 325 789 Q 306 780 322 760 Q 353 720 364 672 L 372 637 Q 384 568 399 552 Q 412 542 417 553 Q 420 565 416 643 L 413 678 Z","M 647 711 Q 657 741 679 781 Q 695 797 683 808 Q 670 826 633 844 Q 615 854 596 844 Q 586 837 594 825 Q 606 792 588 701 L 577 659 Q 550 554 550 544 Q 551 528 568 541 Q 587 557 628 661 L 647 711 Z","M 323 338 Q 398 425 417 438 Q 427 448 425 461 Q 422 474 398 501 Q 374 523 356 525 Q 337 526 342 504 Q 351 474 337 453 Q 294 378 235 313 Q 178 249 103 181 Q 91 172 89 167 Q 83 157 98 157 Q 143 157 296 309 L 323 338 Z","M 296 309 Q 326 243 290 83 Q 278 34 313 -7 L 314 -9 Q 330 -24 342 1 Q 355 40 355 83 Q 358 230 363 263 Q 370 288 361 298 Q 333 331 323 338 C 300 358 285 337 296 309 Z","M 572 247 Q 728 350 819 396 Q 841 399 838 413 Q 834 432 814 458 Q 795 483 767 489 Q 749 490 747 468 Q 748 452 734 433 Q 670 372 575 293 L 527 255 Q 472 213 409 164 Q 402 157 406 147 Q 416 143 425 148 Q 477 185 527 217 L 572 247 Z","M 939 93 Q 924 121 905 211 Q 905 229 897 234 Q 890 238 886 218 Q 856 122 836 93 Q 824 77 788 67 Q 704 46 630 76 Q 602 89 593 108 Q 572 151 572 247 L 575 293 Q 579 369 593 456 Q 599 477 585 487 Q 570 502 544 511 Q 531 515 521 510 Q 514 506 519 486 Q 535 443 532 401 Q 528 319 527 255 L 527 217 Q 528 126 540 86 Q 546 61 569 38 Q 654 -29 817 -2 Q 833 2 850 6 Q 892 19 932 48 Q 953 64 939 93 Z"],"medians":[[[166,641],[218,632],[485,672],[747,696],[810,690],[848,675]],[[331,774],[373,746],[408,557]],[[602,834],[619,824],[640,792],[603,658],[559,543]],[[354,511],[368,495],[382,460],[339,399],[221,264],[154,204],[97,165]],[[322,330],[325,302],[336,281],[332,160],[320,59],[325,-2]],[[766,470],[782,427],[765,410],[412,153]],[[529,501],[553,476],[561,453],[549,249],[555,141],[574,81],[603,53],[647,35],[716,24],[802,32],[855,52],[888,80],[896,227]]]},"草":{"strokes":["M 627 692 Q 703 701 803 691 Q 816 690 822 698 Q 826 708 815 723 Q 770 763 669 741 Q 657 740 648 737 L 587 729 Q 517 720 438 711 L 389 706 Q 310 699 226 692 Q 199 689 218 675 Q 258 648 339 663 Q 367 669 397 674 L 440 680 Q 446 687 578 690 L 627 692 Z","M 438 711 Q 435 742 435 768 Q 436 787 416 793 Q 379 814 355 805 Q 336 796 352 777 Q 379 746 389 706 L 397 674 Q 410 619 423 604 Q 436 594 441 605 Q 445 618 440 680 L 438 711 Z","M 578 690 Q 563 633 562 616 Q 563 601 580 613 Q 595 623 627 692 L 648 737 Q 657 756 673 782 Q 688 797 677 808 Q 665 826 630 844 Q 614 854 594 846 Q 584 839 592 828 Q 602 800 587 729 L 578 690 Z","M 349 555 Q 337 561 307 564 Q 294 567 291 561 Q 284 554 294 538 Q 325 477 348 377 Q 352 347 371 327 Q 390 305 395 322 Q 398 332 398 345 L 397 362 Q 396 374 393 388 Q 387 413 383 434 L 379 457 Q 370 500 368 519 C 364 549 364 549 349 555 Z","M 618 361 Q 618 354 621 345 Q 627 329 640 329 Q 655 330 663 346 Q 675 359 697 424 Q 716 479 756 510 Q 777 526 760 544 Q 741 563 689 592 Q 674 601 600 588 Q 569 588 440 568 Q 388 561 349 555 C 319 551 339 513 368 519 Q 371 519 375 520 Q 448 539 612 551 Q 640 552 651 546 Q 660 540 655 512 Q 633 403 623 381 Q 622 381 622 380 C 617 367 617 367 618 361 Z","M 383 434 Q 392 433 404 434 Q 501 449 574 457 Q 596 461 589 473 Q 579 486 555 492 Q 525 495 379 457 C 350 449 353 436 383 434 Z","M 518 350 Q 570 357 615 361 Q 616 362 618 361 C 640 362 640 362 622 380 Q 615 389 600 392 Q 581 396 545 389 Q 466 373 397 362 C 367 357 369 354 398 345 Q 408 339 458 343 L 518 350 Z","M 539 212 Q 680 224 889 213 Q 911 213 918 222 Q 925 235 906 252 Q 846 300 777 285 Q 683 272 540 253 L 477 246 Q 326 233 151 217 Q 127 216 144 195 Q 178 161 223 169 Q 379 208 475 208 Q 476 208 479 207 L 539 212 Z","M 532 1 Q 532 4 539 212 L 540 253 Q 540 256 548 311 Q 551 330 518 350 C 493 367 445 370 458 343 Q 476 313 477 246 L 479 207 Q 485 -39 496 -58 Q 496 -59 498 -61 Q 504 -68 511 -66 Q 529 -54 532 1 Z"],"medians":[[[220,684],[308,678],[463,700],[564,705],[701,722],[759,721],[812,704]],[[360,790],[383,780],[403,761],[432,609]],[[600,836],[616,826],[635,795],[603,691],[571,616]],[[300,553],[329,532],[339,510],[383,327]],[[356,551],[378,540],[614,572],[675,565],[704,527],[680,472],[641,348]],[[388,441],[396,449],[530,472],[557,474],[578,468]],[[405,358],[413,352],[446,354],[593,376],[617,366]],[[148,206],[203,194],[413,223],[802,253],[858,246],[906,229]],[[466,341],[510,309],[507,-56]]]},"木":{"strokes":["M 524 533 Q 537 536 755 560 Q 768 557 779 573 Q 780 586 754 600 Q 709 627 634 603 Q 526 582 524 580 L 479 572 Q 404 563 234 546 Q 200 542 226 521 Q 265 491 291 494 Q 309 503 446 521 L 524 533 Z","M 524 580 Q 524 682 544 758 Q 559 783 532 802 Q 516 814 485 833 Q 460 851 439 834 Q 433 828 440 813 Q 474 762 476 711 Q 477 647 479 572 L 477 458 Q 474 208 466 155 Q 442 46 456 5 Q 460 -7 466 -21 Q 473 -40 481 -43 Q 488 -50 495 -41 Q 504 -37 514 -15 Q 524 10 523 44 Q 522 90 523 480 L 524 580 Z","M 446 521 Q 368 337 127 132 Q 114 119 124 117 Q 134 113 146 119 Q 276 176 403 344 Q 472 450 477 458 C 528 538 464 563 446 521 Z","M 523 480 Q 607 338 716 186 Q 737 159 774 157 Q 901 147 942 150 Q 954 151 957 157 Q 957 164 941 173 Q 773 251 721 302 Q 628 398 523 532 Q 523 533 524 533 L 524 533 C 506 558 508 506 523 480 Z"],"medians":[[[228,534],[280,522],[695,584],[728,584],[766,574]],[[453,825],[506,771],[498,218],[486,-29]],[[474,519],[459,504],[447,460],[404,389],[332,297],[244,206],[179,154],[130,124]],[[528,513],[549,470],[641,344],[749,220],[789,200],[951,159]]]},"叶":{"strokes":["M 160 553 Q 147 560 115 566 Q 102 570 97 564 Q 90 557 99 539 Q 132 464 148 343 Q 151 306 171 281 Q 190 256 196 274 Q 205 296 200 338 L 194 374 Q 176 495 174 525 C 172 548 172 548 160 553 Z","M 338 411 Q 351 508 377 540 Q 399 568 374 581 Q 353 591 324 608 Q 303 620 264 591 Q 224 572 160 553 C 131 544 146 514 174 525 Q 175 528 264 552 Q 289 559 296 549 Q 306 542 299 500 Q 293 457 284 406 C 279 376 334 381 338 411 Z","M 200 338 Q 224 350 359 376 Q 369 379 370 388 Q 370 395 338 411 C 321 420 312 416 284 406 Q 235 388 194 374 C 166 364 172 326 200 338 Z","M 666 443 Q 751 455 877 457 Q 940 457 945 468 Q 951 481 932 496 Q 866 541 804 520 Q 746 508 667 491 L 608 480 Q 506 464 389 445 Q 367 442 384 423 Q 400 408 420 403 Q 444 399 461 404 Q 528 423 608 435 L 666 443 Z","M 608 435 Q 614 330 605 150 Q 602 -30 623 -68 Q 639 -84 649 -61 Q 665 -12 666 443 L 667 491 Q 668 722 689 756 Q 698 783 679 798 Q 652 819 606 830 Q 585 836 571 821 Q 561 812 574 799 Q 605 774 607 737 Q 608 646 608 480 L 608 435 Z"],"medians":[[[105,556],[134,532],[142,518],[184,280]],[[172,533],[190,548],[286,578],[309,579],[328,566],[338,555],[315,434],[290,414]],[[200,344],[214,362],[267,379],[333,391],[362,387]],[[387,434],[441,427],[604,458],[840,492],[935,475]],[[580,811],[608,803],[646,768],[637,563],[635,-60]]]}},INFO={"花":{"py":"huā","en":"flower"},"草":{"py":"cǎo","en":"grass"},"木":{"py":"mù","en":"tree"},"叶":{"py":"yè","en":"leaf"}};
+(function(){
+var NS='http://www.w3.org/2000/svg',seq=0,cur=START,big=document.getElementById('big'),py=document.getElementById('py'),sq=document.getElementById('sq');
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var raf=0,showEn=false;
+function fit(el,max,min){el.style.fontSize=max+'px';var s=max;while(el.scrollWidth>el.clientWidth+1&&s>min){s-=1;el.style.fontSize=s+'px';}}
+function build(ch){
+  var d=DATA[ch];var id='c'+(++seq);var h='<svg viewBox="0 0 1024 1024" xmlns="'+NS+'" aria-hidden="true">';
+  h+='<path d="M0 0L1024 1024M1024 0L0 1024M512 0V1024M0 512H1024" stroke="#cdbfa8" stroke-width="5" stroke-dasharray="20 16" fill="none"/>';
+  h+='<g transform="scale(1,-1) translate(0,-900)"><defs>';
+  d.strokes.forEach(function(s,i){h+='<clipPath id="'+id+'_'+i+'"><path d="'+s+'"/></clipPath>';});
+  h+='</defs>';
+  d.strokes.forEach(function(s){h+='<path d="'+s+'" fill="#1b1b1b" fill-opacity=".1"/>';});
+  h+='<g class="ink">';
+  d.medians.forEach(function(m,i){
+    var p='M'+m.map(function(q){return q[0]+' '+q[1];}).join('L');
+    h+='<g clip-path="url(#'+id+'_'+i+')"><path class="md" d="'+p+'" pathLength="1" fill="none" stroke="#1b1b1b" stroke-width="190" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1" style="visibility:hidden"/></g>';
+  });
+  h+='</g></g></svg>';
+  sq.innerHTML=h;
+}
+function lens(svg){return Array.prototype.map.call(svg.querySelectorAll('.md'),function(p){return p;});}
+function play(){
+  cancelAnimationFrame(raf);
+  var svg=sq.firstChild,mds=lens(svg),ink=svg.querySelector('.ink');
+  if(reduce){mds.forEach(function(p){p.style.visibility='visible';p.setAttribute('stroke-dashoffset','0');});return;}
+  var durs=mds.map(function(p){var L=0,pts=DATA[cur].medians[mds.indexOf(p)];for(var i=1;i<pts.length;i++){L+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);}return Math.min(1.0,Math.max(.5,L/1500+.25));});
+  var gap=.16,starts=[],T=0;durs.forEach(function(d){starts.push(T);T+=d+gap;});
+  var hold=1.5,fade=.6,cyc=T+hold+fade,t0=performance.now();
+  function frame(now){
+    var t=((now-t0)/1000)%cyc;
+    mds.forEach(function(p,i){
+      var x=Math.min(1,Math.max(0,(t-starts[i])/durs[i]));
+      x=x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+      if(t>=T)x=1;
+      if(x<=.002){p.style.visibility='hidden';}else{p.style.visibility='visible';p.setAttribute('stroke-dashoffset',String(1-x));}
+    });
+    ink.style.opacity=t>T+hold?String(Math.max(0,1-(t-T-hold)/fade)):'1';
+    raf=requestAnimationFrame(frame);
+  }
+  raf=requestAnimationFrame(frame);
+}
+function refreshBig(){
+  var i=INFO[cur];
+  if(showEn){big.classList.add('en');big.textContent=i.en;py.classList.add('hide');fit(big,Math.min(86,Math.round(innerWidth*.22)),18);}
+  else{big.classList.remove('en');big.textContent=cur;big.style.fontSize='';py.classList.remove('hide');py.textContent=i.py;}
+}
+big.addEventListener('click',function(){showEn=!showEn;refreshBig();});
+function setChar(ch){
+  cur=ch;showEn=false;refreshBig();build(ch);play();
+  var ps=document.querySelectorAll('.pic-svg');for(var k=0;k<ps.length;k++){ps[k].classList.toggle('on',ps[k].getAttribute('data-ch')===ch);}
+  var vs=document.querySelectorAll('.vb');for(var j=0;j<vs.length;j++){vs[j].setAttribute('aria-pressed',vs[j].getAttribute('data-ch')===ch?'true':'false');}
+}
+Array.prototype.forEach.call(document.querySelectorAll('.vb'),function(b){b.addEventListener('click',function(){setChar(b.getAttribute('data-ch'));});});
+Array.prototype.forEach.call(document.querySelectorAll('.wd'),function(b){
+  var t=b.querySelector('.wt');
+  b.addEventListener('click',function(){
+    var en=!b.classList.contains('en');b.classList.toggle('en',en);
+    t.textContent=en?b.getAttribute('data-en'):b.getAttribute('data-zh');
+    if(en){fit(t,26,12);}else{t.style.fontSize='';}
+  });
+});
+function refit(){if(showEn)refreshBig();Array.prototype.forEach.call(document.querySelectorAll('.wd.en .wt'),function(t){fit(t,26,12);});}
+addEventListener('resize',refit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refit);
+setChar(START);
+})();
+</script>
+</body></html>

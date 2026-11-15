@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>眠 · 春晓</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--paper:#f6efdf;--paper2:#fffdf6;--ink:#1b1b1b;--red:#b5342a;--line:#8a8578;--wash:#ece6d6;color-scheme:light}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper) url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'.8'%20numOctaves%3D'3'%20seed%3D'4'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%20.45%20%200%200%200%200%20.38%20%200%200%200%200%20.25%20%200%200%200%20.09%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'300'%20height%3D'300'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");color:var(--ink);font-family:'Noto Serif SC','Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+button{font-family:inherit;color:inherit}
+a{color:inherit}
+.ic{display:block}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.wrap{max-width:520px;margin:0 auto;padding:14px 16px 30px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.picbox{width:100%;max-width:340px;aspect-ratio:4/3;border:3px solid var(--ink);border-radius:6px;background:var(--paper2);overflow:hidden}
+.picbox .pic-svg{display:none;width:100%;height:100%}
+.picbox .pic-svg.on{display:block}
+.sq{width:min(100%,340px);aspect-ratio:1;border:3px solid var(--ink);border-radius:6px;background:var(--paper2)}
+.sq svg{width:100%;height:100%;display:block}
+.mid{display:flex;flex-direction:column;align-items:center;gap:0;width:100%}
+.py{height:36px;font-size:27px;font-weight:600;letter-spacing:.04em;line-height:36px;transition:opacity .15s}
+.py.hide{opacity:0}
+.big{width:100%;max-width:340px;min-height:132px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;cursor:pointer;font-family:'Ma Shan Zheng','KaiTi','STKaiti','Kaiti SC',serif;font-size:clamp(100px,34vw,140px);line-height:1.05;color:var(--ink);overflow:hidden;white-space:nowrap}
+.big.en{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600;color:var(--red)}
+.vars{display:flex;gap:8px;width:100%;max-width:420px}
+.vb{flex:1 1 0;min-width:0;min-height:64px;padding:0 2px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);font-size:clamp(15px,4.7vw,21px);cursor:pointer;white-space:nowrap}
+.vb[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+h2{margin:6px 0 0;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;font-weight:400;font-size:34px;letter-spacing:.04em}
+.words{display:flex;flex-direction:column;gap:10px;width:100%;max-width:420px}
+.wd{display:flex;align-items:center;gap:12px;min-height:68px;padding:8px 14px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);cursor:pointer;text-align:left}
+.wd.en{border-color:var(--red)}
+.wd .ic{width:44px;height:44px;flex:none}
+.wt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;font-size:28px;line-height:1.25}
+.wd.en .wt{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600}
+.back{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:64px;margin-top:6px;border:3px solid var(--ink);border-radius:14px;background:var(--wash);text-decoration:none;font-size:26px;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;letter-spacing:.1em}
+</style></head>
+<body><main class="wrap">
+
+<div class="sq" id="sq" role="img" aria-label="眠"></div>
+<div class="mid"><div class="py" id="py">mián</div><button class="big" id="big" type="button" aria-label="眠">眠</button></div>
+
+<h2>Good friends</h2>
+<div class="words"><button class="wd" type="button" data-zh="睡眠" data-en="sleep"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path transform="translate(0 6) scale(0.85)" d="M30 6A18 18 0 1 0 42 32A14 14 0 0 1 30 6Z" fill="#ece6d6"/><path d="M26 6h7l-7 8h7"/><path d="M36 14h5l-5 6h5"/></svg><span class="wt">睡眠</span></button><button class="wd" type="button" data-zh="冬眠" data-en="hibernate"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="14" r="5.5" fill="#ece6d6"/><circle cx="36" cy="14" r="5.5" fill="#ece6d6"/><circle cx="24" cy="26" r="15" fill="#ece6d6"/><path d="M15 24q3 3 6 0M27 24q3 3 6 0"/><ellipse cx="24" cy="32" rx="4.5" ry="3.2" fill="#1b1b1b"/><path d="M24 35v2M20 38q4 2 8 0"/></svg><span class="wt">冬眠</span></button><button class="wd" type="button" data-zh="好眠" data-en="rest"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12V40M44 30V40M4 34H44"/><rect x="4" y="26" width="40" height="8" rx="2" fill="#ece6d6"/><rect x="8" y="19" width="13" height="7" rx="3.5" fill="#fffdf6"/><path d="M28 8h6l-6 7h6"/></svg><span class="wt">好眠</span></button></div>
+<a class="back" href="./">回到诗</a>
+</main>
+<script>var START="眠",DATA={"眠":{"strokes":["M 166 694 Q 156 704 133 712 Q 123 716 112 713 Q 105 707 111 695 Q 114 683 119 671 Q 149 611 131 325 Q 127 285 116 235 Q 103 180 137 137 Q 147 124 158 137 Q 171 155 172 189 L 174 219 Q 174 231 175 365 L 175 393 Q 176 456 177 502 L 177 532 Q 178 638 180 651 Q 181 660 181 666 C 182 683 182 683 166 694 Z","M 296 200 Q 306 185 316 169 Q 334 145 341 148 Q 354 151 368 186 Q 381 226 377 276 Q 368 376 361 595 Q 360 653 374 682 Q 384 701 376 711 Q 369 721 316 737 Q 291 744 274 734 Q 216 706 166 694 C 137 686 152 658 181 666 Q 185 667 190 669 Q 220 676 254 688 Q 285 698 296 688 Q 311 675 312 618 Q 319 386 312 256 Q 315 234 298 235 C 283 220 283 220 296 200 Z","M 177 502 Q 178 502 183 502 Q 235 512 273 518 Q 295 525 286 537 Q 274 550 248 552 Q 200 555 177 532 C 155 512 147 502 177 502 Z","M 175 365 Q 178 365 183 365 Q 237 374 276 379 Q 298 383 290 396 Q 278 411 252 413 Q 198 416 175 393 C 153 373 145 365 175 365 Z","M 172 189 Q 241 198 296 200 C 326 201 326 226 298 235 Q 295 236 292 237 Q 259 243 174 219 C 145 211 142 185 172 189 Z","M 754 644 Q 778 704 806 720 Q 822 738 808 755 Q 753 800 718 796 Q 709 796 702 792 Q 617 753 484 729 C 455 724 469 693 498 699 Q 603 721 710 744 Q 711 744 715 741 Q 722 734 720 718 Q 711 678 699 642 C 690 613 742 616 754 644 Z","M 640 590 Q 692 600 770 611 Q 780 612 780 621 Q 780 628 754 644 C 739 653 728 650 699 642 Q 584 609 491 591 C 462 585 462 562 492 561 Q 501 560 512 562 Q 545 572 597 582 L 640 590 Z","M 484 729 Q 463 747 444 755 Q 425 762 416 756 Q 406 749 415 734 Q 481 599 432 195 Q 426 155 395 112 Q 383 96 392 73 Q 404 45 418 35 Q 431 28 444 45 Q 457 76 599 213 Q 617 228 621 238 Q 624 248 614 248 Q 605 247 491 174 Q 484 168 482 175 Q 489 289 492 388 L 492 401 Q 493 486 492 561 L 491 591 Q 491 594 491 595 Q 491 652 498 699 C 500 717 500 717 484 729 Z","M 689 404 Q 732 417 778 427 Q 821 440 828 446 Q 835 453 831 461 Q 824 471 797 477 Q 769 481 743 470 Q 712 458 681 446 L 636 432 Q 575 416 507 406 Q 497 405 492 401 C 477 394 477 394 492 388 Q 534 367 610 385 Q 626 389 644 393 L 689 404 Z","M 644 393 Q 692 215 795 111 Q 861 45 914 30 Q 941 29 940 63 Q 933 94 946 229 Q 947 242 942 246 Q 936 247 930 233 Q 914 205 899 178 Q 880 144 866 146 Q 848 147 815 180 Q 781 213 750 264 Q 705 342 689 404 L 681 446 Q 675 501 687 536 Q 694 557 640 590 C 615 607 582 608 597 582 Q 597 581 598 579 Q 620 551 625 504 Q 629 467 636 432 L 644 393 Z"],"medians":[[[118,705],[147,675],[155,634],[156,352],[143,210],[148,142]],[[174,689],[193,685],[288,716],[317,708],[337,690],[346,266],[335,211],[340,159]],[[180,510],[212,529],[275,530]],[[179,372],[211,390],[242,395],[280,390]],[[180,196],[190,208],[274,218],[293,229]],[[493,727],[507,717],[724,769],[762,738],[736,671],[706,648]],[[497,569],[508,578],[695,620],[748,626],[771,620]],[[425,745],[462,700],[472,568],[471,367],[454,167],[460,136],[493,146],[615,241]],[[501,395],[536,393],[597,401],[758,449],[820,455]],[[604,583],[607,576],[637,564],[648,549],[657,443],[678,357],[733,239],[793,158],[840,116],[887,99],[909,138],[941,241]]]}},INFO={"眠":{"py":"mián","en":"sleep"}};
+(function(){
+var NS='http://www.w3.org/2000/svg',seq=0,cur=START,big=document.getElementById('big'),py=document.getElementById('py'),sq=document.getElementById('sq');
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var raf=0,showEn=false;
+function fit(el,max,min){el.style.fontSize=max+'px';var s=max;while(el.scrollWidth>el.clientWidth+1&&s>min){s-=1;el.style.fontSize=s+'px';}}
+function build(ch){
+  var d=DATA[ch];var id='c'+(++seq);var h='<svg viewBox="0 0 1024 1024" xmlns="'+NS+'" aria-hidden="true">';
+  h+='<path d="M0 0L1024 1024M1024 0L0 1024M512 0V1024M0 512H1024" stroke="#cdbfa8" stroke-width="5" stroke-dasharray="20 16" fill="none"/>';
+  h+='<g transform="scale(1,-1) translate(0,-900)"><defs>';
+  d.strokes.forEach(function(s,i){h+='<clipPath id="'+id+'_'+i+'"><path d="'+s+'"/></clipPath>';});
+  h+='</defs>';
+  d.strokes.forEach(function(s){h+='<path d="'+s+'" fill="#1b1b1b" fill-opacity=".1"/>';});
+  h+='<g class="ink">';
+  d.medians.forEach(function(m,i){
+    var p='M'+m.map(function(q){return q[0]+' '+q[1];}).join('L');
+    h+='<g clip-path="url(#'+id+'_'+i+')"><path class="md" d="'+p+'" pathLength="1" fill="none" stroke="#1b1b1b" stroke-width="190" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1" style="visibility:hidden"/></g>';
+  });
+  h+='</g></g></svg>';
+  sq.innerHTML=h;
+}
+function lens(svg){return Array.prototype.map.call(svg.querySelectorAll('.md'),function(p){return p;});}
+function play(){
+  cancelAnimationFrame(raf);
+  var svg=sq.firstChild,mds=lens(svg),ink=svg.querySelector('.ink');
+  if(reduce){mds.forEach(function(p){p.style.visibility='visible';p.setAttribute('stroke-dashoffset','0');});return;}
+  var durs=mds.map(function(p){var L=0,pts=DATA[cur].medians[mds.indexOf(p)];for(var i=1;i<pts.length;i++){L+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);}return Math.min(1.0,Math.max(.5,L/1500+.25));});
+  var gap=.16,starts=[],T=0;durs.forEach(function(d){starts.push(T);T+=d+gap;});
+  var hold=1.5,fade=.6,cyc=T+hold+fade,t0=performance.now();
+  function frame(now){
+    var t=((now-t0)/1000)%cyc;
+    mds.forEach(function(p,i){
+      var x=Math.min(1,Math.max(0,(t-starts[i])/durs[i]));
+      x=x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+      if(t>=T)x=1;
+      if(x<=.002){p.style.visibility='hidden';}else{p.style.visibility='visible';p.setAttribute('stroke-dashoffset',String(1-x));}
+    });
+    ink.style.opacity=t>T+hold?String(Math.max(0,1-(t-T-hold)/fade)):'1';
+    raf=requestAnimationFrame(frame);
+  }
+  raf=requestAnimationFrame(frame);
+}
+function refreshBig(){
+  var i=INFO[cur];
+  if(showEn){big.classList.add('en');big.textContent=i.en;py.classList.add('hide');fit(big,Math.min(86,Math.round(innerWidth*.22)),18);}
+  else{big.classList.remove('en');big.textContent=cur;big.style.fontSize='';py.classList.remove('hide');py.textContent=i.py;}
+}
+big.addEventListener('click',function(){showEn=!showEn;refreshBig();});
+function setChar(ch){
+  cur=ch;showEn=false;refreshBig();build(ch);play();
+  var ps=document.querySelectorAll('.pic-svg');for(var k=0;k<ps.length;k++){ps[k].classList.toggle('on',ps[k].getAttribute('data-ch')===ch);}
+  var vs=document.querySelectorAll('.vb');for(var j=0;j<vs.length;j++){vs[j].setAttribute('aria-pressed',vs[j].getAttribute('data-ch')===ch?'true':'false');}
+}
+Array.prototype.forEach.call(document.querySelectorAll('.vb'),function(b){b.addEventListener('click',function(){setChar(b.getAttribute('data-ch'));});});
+Array.prototype.forEach.call(document.querySelectorAll('.wd'),function(b){
+  var t=b.querySelector('.wt');
+  b.addEventListener('click',function(){
+    var en=!b.classList.contains('en');b.classList.toggle('en',en);
+    t.textContent=en?b.getAttribute('data-en'):b.getAttribute('data-zh');
+    if(en){fit(t,26,12);}else{t.style.fontSize='';}
+  });
+});
+function refit(){if(showEn)refreshBig();Array.prototype.forEach.call(document.querySelectorAll('.wd.en .wt'),function(t){fit(t,26,12);});}
+addEventListener('resize',refit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refit);
+setChar(START);
+})();
+</script>
+</body></html>

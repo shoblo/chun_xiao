@@ -1,0 +1,6 @@
+Stroke-order data (the character outlines and center-lines used for the stroke animations)
+comes from makemeahanzi (https://github.com/skishore/makemeahanzi), via Hanzi Writer data
+(https://github.com/chanind/hanzi-writer-data). It is based on Arphic PL KaitiM GB / Arphic PL UKai
+fonts and is used under the Arphic Public License. The full license text is in LICENSE-ARPHICPL.txt.
+Fonts (Ma Shan Zheng, Noto Serif SC) are loaded from Google Fonts under the SIL Open Font License.
+The sound effects (snore, birdsong, rain) are synthesised in the browser; no audio files are included.

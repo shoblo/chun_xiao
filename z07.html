@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>闻 · 春晓</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><style>
+:root{--paper:#f6efdf;--paper2:#fffdf6;--ink:#1b1b1b;--red:#b5342a;--line:#8a8578;--wash:#ece6d6;color-scheme:light}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:var(--paper)}
+body{margin:0;background:var(--paper) url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'300'%20height%3D'300'%3E%3Cfilter%20id%3D'n'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'.8'%20numOctaves%3D'3'%20seed%3D'4'%2F%3E%3CfeColorMatrix%20values%3D'0%200%200%200%20.45%20%200%200%200%200%20.38%20%200%200%200%200%20.25%20%200%200%200%20.09%200'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'300'%20height%3D'300'%20filter%3D'url(%23n)'%2F%3E%3C%2Fsvg%3E");color:var(--ink);font-family:'Noto Serif SC','Songti SC','STSong','Noto Serif CJK SC','SimSun',serif;overflow-x:hidden;-webkit-text-size-adjust:100%}
+button{font-family:inherit;color:inherit}
+a{color:inherit}
+.ic{display:block}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.wrap{max-width:520px;margin:0 auto;padding:14px 16px 30px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.picbox{width:100%;max-width:340px;aspect-ratio:4/3;border:3px solid var(--ink);border-radius:6px;background:var(--paper2);overflow:hidden}
+.picbox .pic-svg{display:none;width:100%;height:100%}
+.picbox .pic-svg.on{display:block}
+.sq{width:min(100%,340px);aspect-ratio:1;border:3px solid var(--ink);border-radius:6px;background:var(--paper2)}
+.sq svg{width:100%;height:100%;display:block}
+.mid{display:flex;flex-direction:column;align-items:center;gap:0;width:100%}
+.py{height:36px;font-size:27px;font-weight:600;letter-spacing:.04em;line-height:36px;transition:opacity .15s}
+.py.hide{opacity:0}
+.big{width:100%;max-width:340px;min-height:132px;display:flex;align-items:center;justify-content:center;background:none;border:0;padding:0;cursor:pointer;font-family:'Ma Shan Zheng','KaiTi','STKaiti','Kaiti SC',serif;font-size:clamp(100px,34vw,140px);line-height:1.05;color:var(--ink);overflow:hidden;white-space:nowrap}
+.big.en{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600;color:var(--red)}
+.vars{display:flex;gap:8px;width:100%;max-width:420px}
+.vb{flex:1 1 0;min-width:0;min-height:64px;padding:0 2px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);font-size:clamp(15px,4.7vw,21px);cursor:pointer;white-space:nowrap}
+.vb[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+h2{margin:6px 0 0;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;font-weight:400;font-size:34px;letter-spacing:.04em}
+.words{display:flex;flex-direction:column;gap:10px;width:100%;max-width:420px}
+.wd{display:flex;align-items:center;gap:12px;min-height:68px;padding:8px 14px;border:3px solid var(--ink);border-radius:14px;background:var(--paper2);cursor:pointer;text-align:left}
+.wd.en{border-color:var(--red)}
+.wd .ic{width:44px;height:44px;flex:none}
+.wt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;font-size:28px;line-height:1.25}
+.wd.en .wt{font-family:'Noto Serif SC','Songti SC',serif;font-weight:600}
+.back{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:64px;margin-top:6px;border:3px solid var(--ink);border-radius:14px;background:var(--wash);text-decoration:none;font-size:26px;font-family:'Ma Shan Zheng','KaiTi','STKaiti',serif;letter-spacing:.1em}
+</style></head>
+<body><main class="wrap">
+
+<div class="sq" id="sq" role="img" aria-label="闻"></div>
+<div class="mid"><div class="py" id="py">wén</div><button class="big" id="big" type="button" aria-label="闻">闻</button></div>
+
+<h2>Good friends</h2>
+<div class="words"><button class="wd" type="button" data-zh="新闻" data-en="news"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="36" height="32" rx="3" fill="#ece6d6"/><path d="M12 16H24M12 23H36M12 29H36M12 35H26"/><rect x="29" y="12" width="8" height="7" fill="#c8c1ad"/></svg><span class="wt">新闻</span></button><button class="wd" type="button" data-zh="闻到" data-en="smell"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24.0" cy="27.5" r="4" fill="#fffdf6"/><circle cx="29.2" cy="31.3" r="4" fill="#fffdf6"/><circle cx="27.2" cy="37.4" r="4" fill="#fffdf6"/><circle cx="20.8" cy="37.4" r="4" fill="#fffdf6"/><circle cx="18.8" cy="31.3" r="4" fill="#fffdf6"/><circle cx="24" cy="33" r="2.6" fill="#c8c1ad"/><path d="M14 21c-3-3 3-5 0-8M24 20c-3-3 3-5 0-8M34 21c-3-3 3-5 0-8"/></svg><span class="wt">闻到</span></button><button class="wd" type="button" data-zh="听闻" data-en="hear"><svg class="ic" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="#1b1b1b" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 43c-4 0-6-3-6-7V19C15 9 22 4 29 6c8 2 11 9 9 16-2 6-9 8-9 14 0 4-3 7-8 7Z" fill="#ece6d6"/><path d="M22 18c3-3 8-1 7 4-1 3-4 4-5 8"/></svg><span class="wt">听闻</span></button></div>
+<a class="back" href="./">回到诗</a>
+</main>
+<script>var START="闻",DATA={"闻":{"strokes":["M 312 766 Q 379 685 407 681 Q 422 680 429 699 Q 430 714 421 737 Q 409 756 381 769 Q 338 791 318 796 Q 308 797 306 785 Q 305 776 312 766 Z","M 190 719 Q 247 566 202 259 Q 193 202 173 142 Q 154 85 189 40 L 191 38 Q 203 22 215 37 Q 252 82 254 252 Q 254 579 274 682 Q 277 703 259 714 Q 234 735 204 744 Q 194 747 186 737 Q 182 731 190 719 Z","M 515 762 Q 499 763 503 752 Q 510 740 532 729 Q 545 719 569 724 Q 651 743 751 758 Q 775 759 784 746 Q 800 737 805 664 Q 821 420 807 143 Q 806 103 791 91 Q 772 78 678 103 Q 660 104 662 95 Q 663 88 677 82 Q 759 33 804 -7 Q 826 -28 840 -24 Q 853 -21 864 9 Q 880 57 877 126 Q 859 514 862 658 Q 863 698 875 723 Q 888 745 878 757 Q 868 773 819 799 Q 800 809 779 804 Q 746 794 673 780 Q 597 767 515 762 Z","M 619 583 Q 658 589 692 592 Q 701 591 709 602 Q 710 612 691 621 Q 658 637 595 620 Q 468 593 352 580 Q 327 579 346 563 Q 371 545 382 544 L 413 548 Q 479 563 567 574 L 619 583 Z","M 382 544 Q 394 520 396 497 Q 397 478 398 308 C 398 278 434 283 435 313 Q 436 343 437 369 L 438 395 Q 439 429 441 457 C 443 487 441 476 442 482 Q 442 483 443 483 Q 446 520 442 526 Q 427 541 413 548 C 387 563 369 571 382 544 Z","M 633 344 Q 633 449 644 549 Q 647 567 619 583 C 594 600 557 602 567 574 Q 583 531 586 520 Q 586 442 586 336 L 585 298 Q 585 91 597 73 Q 597 72 599 70 Q 603 64 610 66 Q 622 75 629 126 Q 632 157 633 301 L 633 344 Z","M 441 457 Q 498 466 541 472 Q 560 475 553 486 Q 544 498 523 501 Q 504 502 442 482 C 413 473 411 452 441 457 Z","M 437 369 Q 497 381 541 387 Q 560 391 553 402 Q 543 414 523 416 Q 490 419 438 395 C 411 383 408 363 437 369 Z","M 633 301 Q 676 302 729 303 Q 780 300 787 310 Q 791 320 777 332 Q 726 371 671 352 Q 652 349 633 344 L 586 336 Q 553 332 518 325 Q 478 321 435 313 L 398 308 Q 349 304 295 295 Q 276 294 290 279 Q 302 267 317 262 Q 336 258 349 262 Q 467 295 585 298 L 633 301 Z"],"medians":[[[317,785],[389,728],[408,700]],[[197,732],[238,684],[241,597],[236,355],[228,241],[202,93],[203,43]],[[512,753],[551,743],[768,779],[796,776],[836,739],[832,678],[843,158],[837,87],[820,48],[772,56],[670,95]],[[347,572],[383,564],[651,609],[699,604]],[[390,541],[415,520],[421,495],[417,336],[414,327],[402,322]],[[575,566],[611,548],[614,529],[607,74]],[[448,463],[456,474],[490,481],[526,486],[545,481]],[[445,375],[452,387],[468,392],[526,401],[544,397]],[[292,287],[341,281],[472,305],[698,330],[732,329],[779,315]]]}},INFO={"闻":{"py":"wén","en":"hear"}};
+(function(){
+var NS='http://www.w3.org/2000/svg',seq=0,cur=START,big=document.getElementById('big'),py=document.getElementById('py'),sq=document.getElementById('sq');
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var raf=0,showEn=false;
+function fit(el,max,min){el.style.fontSize=max+'px';var s=max;while(el.scrollWidth>el.clientWidth+1&&s>min){s-=1;el.style.fontSize=s+'px';}}
+function build(ch){
+  var d=DATA[ch];var id='c'+(++seq);var h='<svg viewBox="0 0 1024 1024" xmlns="'+NS+'" aria-hidden="true">';
+  h+='<path d="M0 0L1024 1024M1024 0L0 1024M512 0V1024M0 512H1024" stroke="#cdbfa8" stroke-width="5" stroke-dasharray="20 16" fill="none"/>';
+  h+='<g transform="scale(1,-1) translate(0,-900)"><defs>';
+  d.strokes.forEach(function(s,i){h+='<clipPath id="'+id+'_'+i+'"><path d="'+s+'"/></clipPath>';});
+  h+='</defs>';
+  d.strokes.forEach(function(s){h+='<path d="'+s+'" fill="#1b1b1b" fill-opacity=".1"/>';});
+  h+='<g class="ink">';
+  d.medians.forEach(function(m,i){
+    var p='M'+m.map(function(q){return q[0]+' '+q[1];}).join('L');
+    h+='<g clip-path="url(#'+id+'_'+i+')"><path class="md" d="'+p+'" pathLength="1" fill="none" stroke="#1b1b1b" stroke-width="190" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1" stroke-dashoffset="1" style="visibility:hidden"/></g>';
+  });
+  h+='</g></g></svg>';
+  sq.innerHTML=h;
+}
+function lens(svg){return Array.prototype.map.call(svg.querySelectorAll('.md'),function(p){return p;});}
+function play(){
+  cancelAnimationFrame(raf);
+  var svg=sq.firstChild,mds=lens(svg),ink=svg.querySelector('.ink');
+  if(reduce){mds.forEach(function(p){p.style.visibility='visible';p.setAttribute('stroke-dashoffset','0');});return;}
+  var durs=mds.map(function(p){var L=0,pts=DATA[cur].medians[mds.indexOf(p)];for(var i=1;i<pts.length;i++){L+=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);}return Math.min(1.0,Math.max(.5,L/1500+.25));});
+  var gap=.16,starts=[],T=0;durs.forEach(function(d){starts.push(T);T+=d+gap;});
+  var hold=1.5,fade=.6,cyc=T+hold+fade,t0=performance.now();
+  function frame(now){
+    var t=((now-t0)/1000)%cyc;
+    mds.forEach(function(p,i){
+      var x=Math.min(1,Math.max(0,(t-starts[i])/durs[i]));
+      x=x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+      if(t>=T)x=1;
+      if(x<=.002){p.style.visibility='hidden';}else{p.style.visibility='visible';p.setAttribute('stroke-dashoffset',String(1-x));}
+    });
+    ink.style.opacity=t>T+hold?String(Math.max(0,1-(t-T-hold)/fade)):'1';
+    raf=requestAnimationFrame(frame);
+  }
+  raf=requestAnimationFrame(frame);
+}
+function refreshBig(){
+  var i=INFO[cur];
+  if(showEn){big.classList.add('en');big.textContent=i.en;py.classList.add('hide');fit(big,Math.min(86,Math.round(innerWidth*.22)),18);}
+  else{big.classList.remove('en');big.textContent=cur;big.style.fontSize='';py.classList.remove('hide');py.textContent=i.py;}
+}
+big.addEventListener('click',function(){showEn=!showEn;refreshBig();});
+function setChar(ch){
+  cur=ch;showEn=false;refreshBig();build(ch);play();
+  var ps=document.querySelectorAll('.pic-svg');for(var k=0;k<ps.length;k++){ps[k].classList.toggle('on',ps[k].getAttribute('data-ch')===ch);}
+  var vs=document.querySelectorAll('.vb');for(var j=0;j<vs.length;j++){vs[j].setAttribute('aria-pressed',vs[j].getAttribute('data-ch')===ch?'true':'false');}
+}
+Array.prototype.forEach.call(document.querySelectorAll('.vb'),function(b){b.addEventListener('click',function(){setChar(b.getAttribute('data-ch'));});});
+Array.prototype.forEach.call(document.querySelectorAll('.wd'),function(b){
+  var t=b.querySelector('.wt');
+  b.addEventListener('click',function(){
+    var en=!b.classList.contains('en');b.classList.toggle('en',en);
+    t.textContent=en?b.getAttribute('data-en'):b.getAttribute('data-zh');
+    if(en){fit(t,26,12);}else{t.style.fontSize='';}
+  });
+});
+function refit(){if(showEn)refreshBig();Array.prototype.forEach.call(document.querySelectorAll('.wd.en .wt'),function(t){fit(t,26,12);});}
+addEventListener('resize',refit);
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(refit);
+setChar(START);
+})();
+</script>
+</body></html>
